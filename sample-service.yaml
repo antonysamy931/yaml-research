@@ -1,0 +1,37 @@
+Services:
+  Classes:
+    - Class:
+      Name: LoingResponse
+      Properties:
+        StatusCode: string
+        Message: string
+        Error: boolean
+
+  Controllers:
+    - Name: Login
+      Methods:
+        - Name: Login
+          Type: POST
+          Input-Arguments:
+            - Arg1:
+              Name: Username
+              DataType: string
+            - Arg2:
+              Name: Password
+              DataType: string
+          Output:
+            Type: JSON                 
+        - Name: GetUsers
+          Type: GET
+          Input-Arguments: 
+            - Arg1:
+              Name: DomainId
+              DataType: string
+          Output:
+            Type: JSON            
+        - Name: Logoff
+          Type: POST
+          Output:
+            Type: JSON
+
+              
